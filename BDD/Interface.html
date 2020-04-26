@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel De Commande</title>
+</head>
+<body>
+
+<form id="someForm" action="" method="" target="_blank">
+	<fieldset style="width: 350px">
+		<legend>Vider ou Remplir la table Chauffeur:</legend>
+					<style type="text/css">
+
+								.button2 {background-color: #008CBA;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Blue */
+								  
+								.button3 {background-color: #f44336;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Red */ 
+
+					</style>
+
+				<button class="button2" onclick="remplirChauffeur()">Remplir</button>
+				<button class="button3" onclick="viderChauffeur()">Vider</button></style>														
+	</fieldset>
+
+	<fieldset style="width: 350px">
+		<legend>Vider ou Remplir la table Vehicule:</legend>
+					<style type="text/css">
+
+								.button2 {background-color: #008CBA;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Blue */
+								  
+								.button3 {background-color: #f44336;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Red */ 
+
+					</style>
+
+				<button class="button2" onclick="remplirVehicule()">Remplir</button>
+				<button class="button3" onclick="viderVehicule()">Vider</button></style>														
+	</fieldset >
+
+	<fieldset style="width: 350px">
+	<legend>Vider la table Commune:</legend>
+						<style type="text/css">
+
+								.button2 {background-color: #008CBA;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Blue */
+								  
+								.button3 {background-color: #f44336;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Red */ 
+
+					</style>
+
+				<button class="button3" onclick="viderCommune()">Vider</button></style>														
+	</fieldset>
+
+	<fieldset style="width: 350px">
+		<legend>Vider ou Remplir la table Lieu:</legend>
+					<style type="text/css">
+
+								.button2 {background-color: #008CBA;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Blue */
+								  
+								.button3 {background-color: #f44336;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Red */ 
+
+					</style>
+
+				<button class="button2" onclick="remplirLieu()">Remplir</button>
+				<button class="button3" onclick="viderLieu()">Vider</button></style>														
+	</fieldset>
+
+	<fieldset style="width: 350px">
+		<legend>Vider ou Remplir la table Tournee:</legend>
+					<style type="text/css">
+
+								.button2 {background-color: #008CBA;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Blue */
+								  
+								.button3 {background-color: #f44336;
+									  border: none;
+								  color: white;
+								  padding: 15px 32px;
+								  text-align: center;
+								  text-decoration: none;
+								  display: inline-block;
+								  font-size: 16px;
+								  margin: 4px 2px;
+								  cursor: pointer;} /* Red */ 
+
+					</style>
+
+				<button class="button2" onclick="remplirTournee()">Remplir</button>
+				<button class="button3" onclick="viderTournee()">Vider</button></style>														
+	</fieldset>
+</form>
+
+
+
+	<script type="text/javascript">
+
+			form=document.getElementById("someForm");
+
+					function remplirChauffeur() {
+					    form.action="remplirChauffeurBDD.php";
+						form.submit();
+					}
+
+					function viderChauffeur() {
+						form.action="viderChauffeurBDD.php";
+						form.submit();
+					}
+
+					function remplirVehicule() {
+					    form.action="remplirVehiculeBDD.php";
+						form.submit();
+					}
+
+					function viderVehicule() {
+						form.action="viderVehiculeBDD.php";
+						form.submit();
+					}
+					
+					function viderCommune() {
+						form.action="viderCommuneBDD.php";
+						form.submit();
+					}
+
+					function remplirLieu() {
+					    form.action="/Programmes/remplirLieuBDD.php";
+						form.submit();
+					}
+
+					function viderLieu() {
+						form.action="/Programmes/viderLieuBDD.php";
+						form.submit();
+					}
+					function remplirTournee() {
+					    form.action="remplirTourneeBDD.php";
+						form.submit();
+					}
+
+					function viderTournee() {
+						form.action="viderTourneeBDD.php";
+						form.submit();
+					}									 
+	</script>
+
+
+</body>
+</html>
